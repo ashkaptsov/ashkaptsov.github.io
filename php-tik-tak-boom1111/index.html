@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ТикТакБум</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col col-md-8 offset-md-2">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-6" style="text-align: center;">
+                <h1>Тик-так-бум</h1>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row">
+                <div class="col"></div>
+                
+                <span class="alert alert-primary" id="gameStatusField">Начните игру</span>
+                
+                <div class="col"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col"> Привет! Это игра - викторина! Введите количество игроков и ответьте на вопросы.<br>
+                    Игрок побеждает если успевает ответить верно на 19 вопросов в течении минуты</div>
+                </div>
+                <div class="col-1"></div>
+
+
+            <div class="row">
+                <div class="col">
+
+                    <div class="numbersOfPlayers">
+                        <input id="input" type="number" hidden placeholder="Введите номер игроков">
+                    </div>
+
+                    <div class="button">                        
+                    <button id="btn" hidden class="btn btn-warning btn-lg"> <strong> Начать игру </strong> </button>
+                    </div>
+
+
+                    <div class="button">
+                        <button id="btn-2" hidden class="btn btn-danger btn-lg"> <strong> Завершить игру </strong> </button>
+                        </div>
+
+                    <div class="timer-output-wrapper">
+                        <div class="timer-output" id="timerField">
+                            00:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3 id="questionField"></h3>
+            </div>
+            <div class="row">
+                <div id="answer1" class="btn btn-primary form-control text-left answer"></div>
+            </div>
+            <div class="row">
+                <div id="answer2" class="btn btn-danger form-control text-left answer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/tikTakBoom.js"></script>
+<script src="js/tikTakBoomTasks.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html> 

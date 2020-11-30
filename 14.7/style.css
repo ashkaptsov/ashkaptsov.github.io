@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+
+#section-1 {
+    background-color: #EEEFF1;
+}
+#section-2 {
+    background-color: white;
+}
+
+#features {
+    background-color: #34547A;
+}
+
+#section-3 {
+    background-color: white;
+}
+
+#section-4 {
+    background-color: #EEEFF1;
+}
+#section-5 {
+    background-color: #EEEFF1;
+}
+
+#footer {
+    background-color: #34547A;
+}
+
+#white-text {
+    color: white
+}
+
+#logo {    
+    font-family: Revalia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    
+    color: #34547A;    
+}
+
+#navbarNav {
+ 
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-align: left;  
+}
+#navbarNav a:hover{
+    color: #34547A;    
+}
+
+.btn{
+    background-color:#34547A;
+}
+#progress{
+   background-color: #C4C4C4;
+}
+#progress-bar{
+    background-color:#34547A;
+}
+
+section{
+    color: #727272;
+}
+
+footer{
+    color: white;
+    font-size: 13px;
+}
+
+h1{
+    color: black;
+}
+h2{
+    color: black;
+}
+h3{
+    color: black;
+}
+h4{
+    color: black;
+}
+
+#bg-light{
+    color: black;
+}
