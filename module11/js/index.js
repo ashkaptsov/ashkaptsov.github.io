@@ -78,17 +78,33 @@ const getRandomInt = (min, max) => {
 const shuffleFruits = () => {
   let result = [];
 
+  const  fruits_old  = [...fruits];
+
   // ATTENTION: сейчас при клике вы запустите бесконечный цикл и браузер зависнет
   while (fruits.length > 0) {
+
+
     // TODO: допишите функцию перемешивания массива
     //
     // Подсказка: находим случайный элемент из fruits, используя getRandomInt
     // вырезаем его из fruits и вставляем в result.
     // ex.: [1, 2, 3], [] => [1, 3], [2] => [3], [2, 1] => [], [2, 1, 3]
     // (массив fruits будет уменьшатся, а result заполняться)
+    
+    let fruit_rnd_index = getRandomInt(0, fruits.length - 1);
+    result.unshift(fruits[fruit_rnd_index]);
+    fruits = fruits.filter((el,index) => index !== fruit_rnd_index);
+  
   }
 
   fruits = result;
+
+  const not_shuffled = fruits.every((element, index) =>  element == fruits_old[index]);
+  if(not_shuffled){
+    alert ('Порядок не изменился!')
+  };
+
+
 };
 
 shuffleButton.addEventListener('click', () => {
@@ -160,3 +176,5 @@ addActionButton.addEventListener('click', () => {
   // необходимые значения берем из kindInput, colorInput, weightInput
   display();
 });
+
+console.log(fruits);
